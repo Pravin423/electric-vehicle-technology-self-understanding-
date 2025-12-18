@@ -6,194 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST WEB</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="index.js"></script>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+</head>
+<script src="index.js"></script>
 
 </head>
 
 <body>
-    <header class="p-3 ml-[130px]  flex bg-white text-black">
-        <img src="./img/logo.png" alt="logo" class="max-w-[320px]">
+    <header class="bg-white py-3 shadow-sm">
+        <div class="max-w-[1280px] mx-auto w-[90%] md:w-[80%] flex items-center">
+            <a href="#" class="inline-block">
+                <img src="./img/logo.png" alt="logo"
+                    class="w-full h-auto max-w-[200px] sm:max-w-[260px] md:max-w-[320px] object-contain">
+            </a>
+        </div>
     </header>
-    <section>
+    <section class="relative overflow-hidden">
         <div
-            class="bg-[url('/img/iit-delhi-banner.png')] bg-cover bg-center h-[500px] flex justify-between items-center text-white p-5 px-20">
-            <div class="text-white flex flex-col ">
+            class="bg-[url('/img/iit-delhi-banner.png')] bg-cover bg-center min-h-[650px] lg:min-h-[550px] flex flex-col lg:flex-row justify-between items-center text-white p-6 md:p-10 lg:px-20 gap-10">
+
+            <div class="flex flex-col w-full lg:w-3/5 mt-10 lg:mt-0">
                 <div
-                    class="px-5 w-[130px] py-3 bg-red-300 rounded text-xl font-bold bg-gradient-to-r from-[#DC2626] to-[#991B1B]">
+                    class="px-4 py-1.5 w-max bg-gradient-to-r from-[#DC2626] to-[#991B1B] rounded text-base md:text-xl font-bold mb-6 shadow-lg">
                     Batch 09
                 </div>
-                <div
-                    class="font-semibold text-5xl  mt-5 text-center md:text-left border-b-3 border-white w-max pb-2 mb-2 head">
-                    Advanced Programme in Electric<br> Vehicle (EV) Technology
-                </div>
-                <hr class="border-t-2 border-white ">
 
-                <div class="font-semibold text-3xl  mt-3 text-center w-max pb-2 mb-2 ">
+                <h1
+                    class="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight border-b-2 border-white max-w-max pb-3 mb-4">
+                    Advanced Programme in Electric<br class="hidden md:block"> Vehicle (EV) Technology
+                </h1>
+
+                <h2 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8 opacity-95">
                     Programme by CEP, IIT Delhi
+                </h2>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <img class="h-6 w-6 object-contain shrink-0" src="./img/duration.png" alt="duration">
+                        <div class="flex flex-wrap items-baseline gap-x-2">
+                            <span class="font-semibold text-base md:text-xl">Duration:</span>
+                            <span class="text-base md:text-xl font-normal">6 Months, 72+hrs of learning</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="h-6 w-6 object-contain shrink-0" src="./img/online-learning.png" alt="mode">
+                        <div class="flex flex-wrap items-baseline gap-x-2">
+                            <span class="font-semibold text-base md:text-xl">Mode:</span>
+                            <span class="text-base md:text-xl font-normal">Live Online</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="h-6 w-6 object-contain shrink-0" src="./img/work-exp.png" alt="eligibility">
+                        <div class="flex flex-wrap items-baseline gap-x-2">
+                            <span class="font-semibold text-base md:text-xl">Eligibility:</span>
+                            <span class="text-base md:text-xl font-normal">Any Graduate</span>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div>
-                    <div class="flex mb-2  gap-4  ">
-                        <img class="h-[25px]" src="./img/duration.png" alt="">
-                        <div class="flex ">
-                            <p class="font-semibold text-xl">Duration:</p>
-                            <p class="font-semibold text-xl px-1">6 Months, 72+hrs of learning</p>
-                        </div>
-
-                    </div>
-                    <div class="flex mb-2  gap-4  ">
-                        <img class="h-[25px]" src="./img/online-learning.png" alt="">
-                        <div class="flex ">
-                            <p class="font-semibold text-xl">Mode:</p>
-                            <p class="font-semibold text-xl px-1">Live Online</p>
-                        </div>
-
-                    </div>
-                    <div class="flex mb-2  gap-4  ">
-                        <img class="h-[25px]" src="./img/work-exp.png" alt="">
-                        <div class="flex ">
-                            <p class="font-semibold text-xl">Eligibility:</p>
-                            <p class="font-semibold text-xl px-1">Any Graduate</p>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-
-
-
-
             </div>
-            <div class=" bg-red-400 w-[380px] rounded-2xl bg-gradient-to-r from-[#DC2626] to-[#aa1f1f]">
-                <div class="flex flex-col justify-center items-center h-[60px] gap-2">
-                    <h1 class="font-bold text-xl">Apply Now</h1>
-                    <p class="text-xs font-light">Start your journey with EV Technology</p>
+
+            <div
+                class="w-full max-w-[400px] bg-gradient-to-r from-[#DC2626] to-[#aa1f1f] rounded-2xl shadow-2xl overflow-hidden mb-10 lg:mb-0">
+                <div class="flex flex-col justify-center items-center py-4 text-center">
+                    <h3 class="font-bold text-xl md:text-xl">Apply Now</h3>
+                    <p class="text-xs font-light opacity-90">Start your journey with EV Technology</p>
                 </div>
-                <div class="bg-white h-full  rounded-b-lg  p-4 ">
-                    <div class="flex gap-2 ">
-                        <div>
-                            <label for="first-name" class="text-[12px]  text-black font-medium">
-                                First
-                                Name *</label>
 
-                            <div
-                                class=" px-2 py-[8px] border-2 border-[#e5e7eb] rounded-[6px] text-[12px] font-medium text-black  inline-flex gap-2 items-center">
-
-                                <input id="first-name" type="text" placeholder="Enter Your first name"
-                                    class="text-[#848484] focus:outline-none">
+                <div class="bg-white p-5 md:p-6 text-black">
+                    <form action="#" class="space-y-3">
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <div class="flex-1">
+                                <label class="text-[12px] font-medium block mb-1">First Name *</label>
+                                <input type="text" placeholder="First name"
+                                    class="w-full px-3 py-2 border-2 border-[#e5e7eb] rounded-md text-sm focus:outline-none focus:border-red-500">
                             </div>
-                        </div>
-                        <div>
-                            <label for="last-name" class="text-[12px] text-[#0A0A0A] font-medium">
-                                Last
-                                Name *</label>
-
-                            <div
-                                class="w-full px-2 py-[8px] border-2 border-[#e5e7eb] rounded-[6px] text-[12px] font-medium text-black  inline-flex gap-2 items-center">
-
-                                <input id="last-name" type="text" placeholder="Enter Your last name"
-                                    class="text-[#848484] focus:outline-none">
+                            <div class="flex-1">
+                                <label class="text-[12px] font-medium block mb-1">Last Name *</label>
+                                <input type="text" placeholder="Last name"
+                                    class="w-full px-3 py-2 border-2 border-[#e5e7eb] rounded-md text-sm focus:outline-none focus:border-red-500">
                             </div>
                         </div>
 
-                    </div>
-                    <div>
-                        <label for="email-adddress" class="text-[12px] text-[#0A0A0A] font-medium">
-                            Email Adress *</label>
-
-                        <div
-                            class="w-full px-2 py-[8px] border-2 border-[#e5e7eb] rounded-[6px] text-[12px] font-medium text-black  inline-flex gap-2 items-center">
-
-                            <input id="email-adddress" type="email" placeholder="Email address"
-                                class="text-[#848484] focus:outline-none">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="phone" class="text-[12px] text-[#0A0A0A] font-medium">
-                            Phone Number *
-                        </label>
-
-                        <div
-                            class="w-full px-2 py-[8px] border-2 border-[#e5e7eb] rounded-[6px] text-[12px] font-medium text-black inline-flex gap-2 items-center">
-                            <input id="phone" type="tel" placeholder="Enter your phone number"
-                                class="w-full text-[#848484] focus:outline-none bg-transparent" />
+                        <div>
+                            <label class="text-[12px] font-medium block mb-1">Email Address *</label>
+                            <input type="email" placeholder="Email address"
+                                class="w-full px-3 py-2 border-2 border-[#e5e7eb] rounded-md text-sm focus:outline-none focus:border-red-500">
                         </div>
 
-                    </div>
-                    <div class="flex gap-4 w-full   mt-2">
+                        <div>
+                            <label class="text-[12px] font-medium block mb-1">Phone Number *</label>
+                            <input type="tel" placeholder="Enter phone number"
+                                class="w-full px-3 py-2 border-2 border-[#e5e7eb] rounded-md text-sm focus:outline-none focus:border-red-500">
+                        </div>
 
-                        <div class="flex flex-col w-1/2">
-                            <label for="exp1" class="text-[12px] text-[#0A0A0A] font-medium mb-1">
-                                Work Exp *
-                            </label>
-
-                            <div
-                                class="w-full px-2 py-[8px] border-2 border-[#e5e7eb] rounded-[6px] text-[12px] font-medium text-black">
-                                <select id="exp1" class="w-full text-gray-500 focus:outline-none bg-transparent">
-                                    <option value="" disabled selected>Select experience</option>
-                                    <option value="min-3">Min 3 Years</option>
-                                    <option value="3-5">3 - 5 Years</option>
-                                    <option value="5-10">5 - 10 Years</option>
-                                    <option value="10-12">10 - 12 Years</option>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <div class="flex-1">
+                                <label class="text-[12px] font-medium block mb-1">Work Exp *</label>
+                                <select
+                                    class="w-full px-3 py-2 border-2 border-[#e5e7eb] rounded-md text-sm bg-white focus:outline-none">
+                                    <option disabled selected>Select exp</option>
+                                    <option>Min 3 Years</option>
+                                    <option>3-5 Years</option>
+                                    <option>5-10 Years</option>
                                 </select>
                             </div>
-                        </div>
-
-
-                        <div class="flex flex-col w-1/2">
-                            <label for="location" class="text-[12px] text-[#0A0A0A] font-medium mb-1">
-                                City *
-                            </label>
-
-                            <div
-                                class="w-full px-2 py-[8px] border-2 border-[#e5e7eb] rounded-[6px] text-[12px] font-medium text-black">
-                                <input type="text" name="location" id="location" placeholder="Enter a location">
+                            <div class="flex-1">
+                                <label class="text-[12px] font-medium block mb-1">City *</label>
+                                <input type="text" placeholder="City"
+                                    class="w-full px-3 py-2 border-2 border-[#e5e7eb] rounded-md text-sm focus:outline-none focus:border-red-500">
                             </div>
                         </div>
-                    </div>
-                    <div class=" mt-3  text-xs flex flex-col gap-2">
-                        <div class="flex flex-col gap-2 text-[12px] text-[#0A0A0A]">
 
-                            <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" class="w-4 h-4 border border-gray-300 rounded accent-blue-600" />
-                                <span>I am a graduate with min. 50% marks*</span>
+                        <div class="space-y-2 pt-2">
+                            <label class="flex items-start gap-2 cursor-pointer group">
+                                <input type="checkbox" class="mt-1 shrink-0 w-4 h-4 accent-red-600">
+                                <span class="text-[11px] leading-tight text-gray-700">I am a graduate with min. 50%
+                                    marks*</span>
                             </label>
-                        </div>
-                        <div class="flex flex-col gap-2 text-[12px] text-[#0A0A0A]">
-
-                            <label class="flex items-center gap-2 cursor-pointer">
-                                <input type="checkbox" class="w-4 h-4 border border-gray-300 rounded accent-blue-600" />
-                                <span>I agree to the Terms and Conditions od this website</span>
+                            <label class="flex items-start gap-2 cursor-pointer group">
+                                <input type="checkbox" class="mt-1 shrink-0 w-4 h-4 accent-red-600">
+                                <span class="text-[11px] leading-tight text-gray-700">I agree to the Terms and
+                                    Conditions of this website</span>
                             </label>
                         </div>
 
-
-                    </div>
-
-
-                    <button
-                        class=" font-bold text-xl mt-2 bg-gradient-to-r from-[#DC2626] to-[#991B1B] w-[350px] h-[40px] rounded-lg">
-                        Submit Now
-                    </button>
-
-
-
-
-
-
+                        <button type="submit"
+                            class="w-full mt-4 py-3 bg-gradient-to-r from-[#DC2626] to-[#991B1B] text-white font-bold text-lg rounded-lg hover:brightness-110 transition-all">
+                            Submit Now
+                        </button>
+                    </form>
                 </div>
-
-
-
-
             </div>
         </div>
-
-
     </section>
 
 
@@ -203,10 +152,10 @@
             <div class="inline-block w-[80px] bg-[#DC2626] h-1"></div>
         </div>
 
-        <div class="flex flex-col  md:flex-row justify-between gap-3 px-5 md:px-20">
+        <div class="flex flex-col  md:flex-row max-w-[1400px]  justify-between gap-6     px-5 md:px-20">
 
-            <div class="bg-white border-2 rounded-lg w-[400px] p-5 flex-1 h-[350px] border-black overflow-auto">
-                <p class="text-[#000000] font-normal text-[18px]">
+            <div class="bg-white border-2 rounded-lg w-[auto] p-5 flex-1 h-[320px] border-black overflow-auto">
+                <p class=" font-normal text-left text-[18px]">
                     With the global EV market growing at 25%+ CAGR and India aiming for 30% EV adoption by 2030, the
                     demand for skilled EV professionals is rising rapidly.
                     <br><br>
@@ -342,215 +291,404 @@
     </section>
 
 
-    <section class="text-center py-20">
-        <div class="mb-10">
-            <h2 class="text-[30px] font-medium">Key Learning Outcomes</h2>
-            <div class="w-20 h-1 bg-red-600 mx-auto mt-2"></div>
+    <section class="py-10 md:py-20 bg-white">
+        <div class="max-w-[1280px] mx-auto w-[90%] md:w-[85%] lg:w-[80%] text-center">
+
+            <div class="mb-10">
+                <h2 class="text-[26px] md:text-[30px] font-medium text-slate-900">Key Learning Outcomes</h2>
+                <div class="w-20 h-1 bg-[#DC2626] mx-auto mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl ">
+                    <p class="text-[#364153] font-medium leading-snug">
+                        Exposure to the full spectrum of technologies, economic and policy aspects of e-mobility.
+                    </p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl ">
+                    <p class="text-[#364153] font-medium">Vehicle dynamics</p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl ">
+                    <p class="text-[#364153] font-medium leading-snug">
+                        Comprehensive understanding of storage devices from single cell to pack level
+                    </p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl ">
+                    <p class="text-[#364153] font-medium leading-snug">
+                        Lithium-ion battery fault diagnosis, safety and testing
+                    </p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl ">
+                    <p class="text-[#364153] font-medium">Working principles of traction motors</p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl">
+                    <p class="text-[#364153] font-medium leading-snug">
+                        Understanding Battery Management System (BMS) architecture
+                    </p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl">
+                    <p class="text-[#364153] font-medium leading-snug">
+                        Power electronics required for drivetrains and chargers
+                    </p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl ">
+                    <p class="text-[#364153] font-medium leading-snug">
+                        Charging aspect from the device to the electric grid level
+                    </p>
+                </div>
+
+                <div
+                    class="flex items-center justify-center min-h-[110px] p-5 border-[3px] border-[#DC2626] rounded-2xl ">
+                    <p class="text-[#364153] font-medium leading-snug">
+                        Charger types, charging protocols and standards
+                    </p>
+                </div>
+
+            </div>
         </div>
-        <div class="flex px-[150px] gap-6 mb-6">
-
-            <div class="flex flex-col gap-6 flex-1">
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Exposure to the full spectrum of technologies, economic and policy
-                    aspects of the e-mobility space.
-                </div>
-
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Lithium-ion battery fault diagnosis, safety and testing
-                </div>
-
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Power electronics required for drivetrains and chargers
-
-
-                </div>
-
-            </div>
-
-            <div class="flex flex-col gap-6 flex-1">
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Vehicle dynamics
-                </div>
-
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Working principles of traction motors
-                </div>
-
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Charging aspect from the device to the electric grid level
-                </div>
-
-            </div>
-
-            <div class="flex flex-col gap-6 flex-1">
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Comprehensive understanding of storage devices from single cell to pack level
-                </div>
-
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Understanding Battery Management System (BMS) architecture
-                </div>
-
-                <div class="h-[90px] border-[3px] border-[#DC2626] rounded-2xl  
-            flex items-center justify-center text-center p-4 leading-relaxed">
-                    Charger types, charging protocols and standards
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
     </section>
 
 
-    <section class="text-center bg-gray-100 py-20">
-        <div class="mb-10">
-            <h2 class="text-[30px] font-medium">Programme Curriculum</h2>
-            <div class="w-20 h-1 bg-red-600 mx-auto mt-2"></div>
-        </div>
-        <div class="p-3  h-full  flex  justify-center ">
-            <div class="bg-gray-300 p-3 rounded items-center  w-3/6 ">
-                <div class="border-b border-slate-200 bg-white rounded-lg mb-4">
-                    <button onclick={toggleAccordion(1)}
-                        class="w-full flex gap-4 items-center py-5 px-3 rounded-lg bg-white text-black">
+    <section class="bg-[#F3F4F6] py-10 md:py-20">
+        <div class="max-w-[1280px] mx-auto w-[92%] md:w-[85%] lg:w-[80%] text-center">
 
-                        <span id="icon-1" class="transition-transform duration-300">
+            <div class="mb-10">
+                <h2 class="text-[26px] md:text-[30px] font-medium text-slate-900">Programme Curriculum</h2>
+                <div class="w-20 h-1 bg-[#DC2626] mx-auto mt-2"></div>
+            </div>
+
+            <div class="bg-[#EDEDED] rounded-[14px] p-4 md:p-8 max-w-[900px] mx-auto shadow-sm">
+
+                <div class="border-b border-slate-200 bg-white rounded-xl mb-4 overflow-hidden">
+                    <button onclick="toggleAccordion(1)"
+                        class="w-full flex gap-4 items-center py-4 md:py-5 px-4 text-slate-800 hover:bg-slate-50 transition-colors">
+                        <span id="icon-1" class="shrink-0 transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-4 h-4">
+                                class="w-5 h-5">
                                 <path
                                     d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>
-
-                        <span class="text-left font-medium">
-                            Module 1: Overview of Electric Vehicle
-                        </span>
+                        <span class="text-left font-medium text-sm md:text-base">Module 1: Overview of Electric
+                            Vehicle</span>
                     </button>
-
                     <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="text-sm text-slate-500 p-10 grid md:grid-cols-2 gap-6">
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Basic scheme of EV drivetrain
-                            </div>
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Vehicle dynamics and concept of drive cycles
-                            </div>
+                        <div class="p-5 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm font-semibold text-center">Basic
+                                scheme of EV
+                                drivetrain</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center font-semibold">
+                                Vehicle dynamics and
+                                concept of drive cycles</div>
                         </div>
                     </div>
                 </div>
-                <div class="border-b border-slate-200 bg-white rounded-lg mb-4">
+
+                <div class="border-b border-slate-200 bg-white rounded-xl mb-4 overflow-hidden">
                     <button onclick="toggleAccordion(2)"
-                        class="w-full flex gap-4 items-center py-5 px-3 rounded-lg bg-white text-black">
-
-                        <span id="icon-2" class="transition-transform duration-300">
+                        class="w-full flex gap-4 items-center py-4 md:py-5 px-4 text-slate-800 hover:bg-slate-50 transition-colors">
+                        <span id="icon-2" class="shrink-0 transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-4 h-4">
+                                class="w-5 h-5">
                                 <path
                                     d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>
-
-                        <span class="text-left font-medium">
-                            Module 2: Batteries,Fuel Cell & Supercapacitor for Electric Vehicles
-                        </span>
+                        <span class="text-left font-medium text-sm md:text-base">Module 2: Batteries, Fuel Cell &
+                            Supercapacitor</span>
                     </button>
-
                     <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="text-sm text-slate-500 p-10 grid md:grid-cols-2 gap-6">
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Electrochemical cell and battery
-                            </div>
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Types of batteriesused in EV
-                            </div>
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Influence of battery on EV range and cost
-                            </div>
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Other Electrochemical storage relevant to EV:fuel cell,supercap,flow battery
-                            </div>
+                        <div class="p-5 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">
+                                Electrochemical cell
+                                and battery</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">
+                                Influence of battery
+                                on EV range and cost</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">Type
+                                of batteries used
+                                in EV</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">Fuel
+                                cell, supercap,
+                                and flow batteries</div>
                         </div>
                     </div>
                 </div>
-                <div class="border-b border-slate-200 bg-white rounded-lg mb-4">
+
+
+
+                <div class="border-b border-slate-200 bg-white rounded-xl mb-4 overflow-hidden">
                     <button onclick="toggleAccordion(3)"
-                        class="w-full flex gap-4 items-center py-5 px-3 rounded-lg bg-white text-black">
-
-                        <span id="icon-3" class="transition-transform duration-300">
+                        class="w-full flex gap-4 items-center py-4 md:py-5 px-4 text-slate-800 hover:bg-slate-50 transition-colors">
+                        <span id="icon-3" class="shrink-0 transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-4 h-4">
+                                class="w-5 h-5">
                                 <path
                                     d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>
-
-                        <span class="text-left font-medium">
-                            Module 3: Battery Technology
-                        </span>
+                        <span class="text-left font-medium text-sm md:text-base">Module 3: Battery
+                            Characteristics</span>
                     </button>
-
                     <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="text-sm text-slate-500 p-10 grid md:grid-cols-2 gap-6">
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Lithium-ion battery chemistry
-                            </div>
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Battery Management Systems (BMS)
-                            </div>
+                        <div class="p-5 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">
+                                Battery state: SoC,
+                                SoH, C-rate</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">
+                                Voltage &
+                                current-voltage characteristics</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">
+                                Future directions of
+                                Li-ion technology</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">Fault
+                                diagnosis,
+                                safety, and testing</div>
                         </div>
                     </div>
                 </div>
-                <div class="border-b border-slate-200 bg-white rounded-lg mb-4">
+                <div class="border-b border-slate-200 bg-white rounded-xl mb-4 overflow-hidden">
                     <button onclick="toggleAccordion(4)"
-                        class="w-full flex gap-4 items-center py-5 px-3 rounded-lg bg-white text-black">
-
-                        <span id="icon-4" class="transition-transform duration-300">
+                        class="w-full flex gap-4 items-center py-4 md:py-5 px-4 text-slate-800 hover:bg-slate-50 transition-colors">
+                        <span id="icon-3" class="shrink-0 transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-4 h-4">
+                                class="w-5 h-5">
                                 <path
                                     d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>
-
-                        <span class="text-left font-medium">
-                            Module 4: Charging Infrastructure
-                        </span>
+                        <span class="text-left font-medium text-sm md:text-base">Module 4: Battery
+                            Module and Pack</span>
                     </button>
-
                     <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="text-sm text-slate-500 p-10 grid md:grid-cols-2 gap-6">
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                AC and DC charging systems
-                            </div>
-                            <div class="bg-[#D40000] p-4 rounded-[10px] text-white">
-                                Fast charging standards and safety
-                            </div>
+                        <div class="p-5 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">
+                                Li-ion cell manufacturing process</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">Cell
+                                balancing</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">
+                                Electrical design and sizing of the battery pack</div>
+                            <div class="bg-[#D40000] p-4 rounded-lg text-white text-sm text-center  font-semibold">
+                                Mechanical and thermal design of battery pack</div>
                         </div>
                     </div>
                 </div>
 
-                <p class="text-xs  px-3 text-gray-600 font-bold">
+                <p class="mt-6 text-xs text-black font-medium leading-relaxed ">
                     Note: The list of modules provided is subject to change and may be updated or revised at the
                     institute's discretion.
                 </p>
+            </div>
+        </div>
+    </section>
 
 
+    <section class="bg-white">
+        <div class="max-w-[1280px] mx-auto w-[90%] md:w-[80%] text-center py-10 md:py-20">
+
+            <div class="mb-12">
+                <h2 class="text-[28px] md:text-[35px] font-medium text-slate-900">Pedagogy</h2>
+                <div class="w-20 h-1 bg-[#D40000] mx-auto mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
+
+                <div class="flex flex-col items-center">
+                    <div
+                        class="bg-[#D40000] h-[80px] w-[80px] md:h-[100px] md:w-[100px] flex items-center justify-center rounded-full mb-4 shadow-md transition-transform hover:scale-105">
+                        <img src="./img/icon-1.png" alt="Industry Project" class="w-1/2 h-auto">
+                    </div>
+                    <p class="text-sm md:text-base font-bold text-slate-800 px-2 leading-tight">
+                        Industry Relevant Project
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div
+                        class="bg-[#D40000] h-[80px] w-[80px] md:h-[100px] md:w-[100px] flex items-center justify-center rounded-full mb-4 shadow-md transition-transform hover:scale-105">
+                        <img src="./img/icon-2.png" alt="Peer Learning" class="w-1/2 h-auto">
+                    </div>
+                    <p class="text-sm md:text-base font-bold text-slate-800 px-2 leading-tight">
+                        Work Flipped & Peer Learning
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div
+                        class="bg-[#D40000] h-[80px] w-[80px] md:h-[100px] md:w-[100px] flex items-center justify-center rounded-full mb-4 shadow-md transition-transform hover:scale-105">
+                        <img src="./img/icon-3.png" alt="Hands-on" class="w-1/2 h-auto">
+                    </div>
+                    <p class="text-sm md:text-base font-bold text-slate-800 px-2 leading-tight">
+                        Hands-on Exercises and Assessments
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div
+                        class="bg-[#D40000] h-[80px] w-[80px] md:h-[100px] md:w-[100px] flex items-center justify-center rounded-full mb-4 shadow-md transition-transform hover:scale-105">
+                        <img src="./img/icon-4.png" alt="Evaluation" class="w-1/2 h-auto">
+                    </div>
+                    <p class="text-sm md:text-base font-bold text-slate-800 px-2 leading-tight">
+                        Continuous Evaluation
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
+    <section class="bg-[url('./img/group-insight-sections.png')] bg-no-repeat bg-cover min-h-fit">
+    <div class="max-w-[1280px] m-auto w-[90%] lg:w-[80%] text-center py-10 max-sm:py-8">
+        
+        <div class="mb-8 md:mb-10 text-white font-semibold text-2xl md:text-3xl">
+            <h2>Programme Insights</h2>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center items-stretch gap-6">
+            
+            <div class="flex-1 bg-white rounded-[12px] border-t-2 border-[#AFAFAF] border px-5 py-6 md:py-8 flex flex-col gap-4 shadow-lg">
+                <h2 class="font-medium text-[20px] md:text-[22px] text-[#111827]">
+                    Eligibility Criteria
+                </h2>
+
+                <div class="flex">
+                    <ul class="text-[#4B5563] list-disc text-left marker:text-[#FDE02D] pl-5 flex flex-col gap-3 text-[15px] md:text-[16px]">
+                        <li>
+                            <strong class="text-gray-900">For Indian Participants</strong> – Graduates or Diploma Holders from a recognised University / Institutes (UGC / AICTE / DEC / AIU / State Government) in any discipline.
+                        </li>
+                        <li>
+                            <strong class="text-gray-900">For International Participants</strong> – Graduation or equivalent degree from any recognised University or Institution in their respective country.
+                        </li>
+                        <li>
+                            <strong class="text-gray-900">Attendance:</strong> Minimum 50% attendance is mandatory in live sessions.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex-1 bg-white rounded-[12px] border-t-2 border-[#AFAFAF] border px-5 py-6 md:py-8 flex flex-col gap-4 shadow-lg">
+                <h2 class="font-medium text-[20px] md:text-[22px] text-[#111827]">
+                    Who Should Attend
+                </h2>
+
+                <ul class="text-[#4B5563] list-disc marker:text-[#FDE02D] pl-5 text-left flex flex-col gap-3 text-[15px] md:text-[16px]">
+                    <li>
+                        <strong class="text-gray-900">Fresh Graduates</strong> who aspire to work in the sunrise sector of Electric Vehicle (EV) technology.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Entry-Level R&D Professionals</strong> seeking understanding of energy storage devices and power electronics.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Mid & Senior-Level Professionals</strong> looking to refresh core principles and future trends.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Quality Control Professionals</strong> aiming to understand the relationship between specifications and EV components.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Production, Sales & Support Teams</strong> who need clarity on rating, sizing, and powertrain drives.
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Management Roles</strong> seeking familiarity with EV jargon and technology limitations.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="max-w-[1280px] m-auto w-[80%] text-center py-10 max-lg:w-[90%] max-sm:py-5">
+        <div class="mb-10">
+            <h2 class="text-[30px] font-medium">Fee Details</h2>
+            <div class="w-20 h-1 bg-red-600 mx-auto mt-2"></div>
+        </div>
+        <div class="flex gap-8 justify-center text-left max-lg:flex-col">
+            <div class="flex-1 border border-[#E5E7EB] rounded-xl p-6 bg-white">
+                <h3 class="text-lg font-semibold mb-4">Fee Structure</h3>
+
+                <div class="flex justify-between items-center mb-3">
+                    <p class="text-gray-700">Programme Fee</p>
+                    <p class="text-red-600 font-semibold">INR 1,25,000/- + GST</p>
+                </div>
+
+                <div class="h-[2px] bg-red-600 mb-5"></div>
+                <div class="bg-gray-100 rounded-lg p-5">
+                    <h4 class="font-semibold mb-4">Instalment Pattern</h4>
+
+                    <p class="mb-2">
+                        <span class="font-medium">Booking Amount:</span>
+                        INR 62,500/- + GST*
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        (Within 3 days of issue of offer letter.)
+                    </p>
+
+                    <p>
+                        <span class="font-medium">Instalment 1:</span>
+                        INR 62,500/- + GST*
+                    </p>
+                    <p class="text-sm text-gray-500">(5th April 2026)</p>
+                </div>
+
+            </div>
+            <div class="flex-1 border border-[#E5E7EB] rounded-xl p-6 bg-white">
+
+                <!-- EMI -->
+                <h3 class="text-lg font-semibold mb-4">
+                    Easy EMI Options Available*
+                </h3>
+
+                <ul class="list-disc pl-5 text-gray-700 space-y-3 mb-6">
+                    <li>
+                        Loan options is a service offered by Jaro Education. IIT Delhi is
+                        not responsible for the same.
+                    </li>
+                    <li>
+                        Payment of fees should be submitted to the IIT Delhi CEP account only.
+                        The receipt will be issued by the IIT Delhi CEP accounts team.
+                    </li>
+                </ul>
+
+                <!-- Refund -->
+                <h3 class="text-lg font-semibold mb-4">
+                    Withdrawal & Refund from Programme
+                </h3>
+
+                <ul class="list-disc pl-5 text-gray-700 space-y-3 text-sm">
+                    <li>
+                        Candidates can withdraw within 15 days from the programme start date.
+                        A total of 80% of the fee received will be refunded.
+                    </li>
+                    <li>
+                        Candidates withdrawing after 15 days will not be eligible for any refund.
+                    </li>
+                    <li>
+                        Withdrawal requests must be emailed to cepaccounts@admin.iitd.ac.in
+                        and crm.support@jaro.in.
+                    </li>
+                </ul>
+
+                <p class="text-xs text-gray-500 mt-5">
+                    Disclaimer: The E-Certificate Programmes under CEP, IIT Delhi, do not
+                    provide placement support or alumni status.
+                </p>
             </div>
 
         </div>
@@ -562,56 +700,445 @@
     </section>
 
 
-    <section class="text-center py-20">
+    <section class="max-w-[1280px] m-auto w-[80%] text-center py-10 max-lg:w-[90%] max-sm:py-5">
         <div class="mb-10">
-            <h2 class="text-[30px] font-medium">Pedagogy</h2>
+            <h2 class="text-[30px] font-medium">Get The Prestigious Degree</h2>
+            <div class="w-20 h-1 bg-red-600 mx-auto mt-2"></div>
+        </div>
+        <div class="Roboto text-left ">
+            <div class="px-10 mb-10 max-sm:px-5">
+                <ul
+                    class="text-[#4B5563] list-disc font-medium marker:text-[#4B5563] text-[15px] marker:text-[5px]  grid gap-5">
+
+                    <li>Complete all the course requirements successfully to obtain this prestigious recognition from
+                        IIT Delhi.</li>
+                    <li>You will be awarded a 'Certificate of Successful Completion' if you obtain 50% aggregate marks
+                        in the evaluation components and maintain a minimum attendance of 50% in lectures.</li>
+                    <li>Participants who are unable to score 50% marks in the evaluation will be eligible for the
+                        'Participation Certificate' if their attendance is above 50%.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-[600px] mx-auto mt-2">
+            <div class="rounded-[10px] shadow-2xl shadow-black/80 overflow-hidden"><img src="./img/certificate-main.jpg"
+                    class="w-full">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="w-full bg-gradient-to-br from-[#DC2626] to-[#991B1B] py-10 md:py-16">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-noto font-semibold text-[26px] md:text-[40px] text-white text-center px-4 mb-3 md:mb-5">
+                Participants of Previous Batches Were Employed With
+            </h2>
+
+            <p class="text-white font-normal text-[16px] text-center py-4 mb-8 mx-auto px-6 max-w-3xl">
+                Learners from top corporates have upskilled through this programme. Discover the organisations where
+                previous participants worked.
+            </p>
+
+            <div
+                class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 px-4 md:px-10 lg:px-[100px] place-items-center">
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/1-main.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/2.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/3.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/4.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/5.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/6.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/7.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/8.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/9.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/10.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/11.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/12.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/13.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/14.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/15.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/16.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/17.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/18.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/19.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/20.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-4 w-full flex justify-center items-center h-[100px]">
+                    <img src="./img/21.png" class="max-w-full max-h-full object-contain" alt="Employer Logo">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-[1280px] m-auto w-[80%] text-center py-10 max-lg:w-[90%] max-sm:py-5">
+        <div class="mb-10">
+            <h2 class="text-[30px] font-medium">Faculty & Mentors</h2>
             <div class="w-20 h-1 bg-red-600 mx-auto mt-2"></div>
         </div>
 
-        <div class=" flex justify-between mx-[200px] ">
-            <div class="text-center font-bold ">
-                <div
-                    class=" bg-[#D40000] h-[100px] w-[100px] flex items-center justify-center rounded-[50%] mx-auto mb-4">
-                    <img src="./img/icon-1.png" alt="tick">
+
+        <div class="grid grid-cols-3 gap-7 max-lg:grid-cols-1 ">
+            <div class="flex flex-col justify-center items-center gap-5">
+                <div class="relative z-1">
+                    <img src="./img/sumit.jpg" alt="faculty"
+                        class="border-[#DC2626] border-2 rounded-full w-[120px] h-[120px] object-cover">
                 </div>
-                Industry Relevant Project
-            </div>
-            <div class="text-center font-bold ">
-                <div
-                    class=" bg-[#D40000] h-[100px] w-[100px] flex items-center justify-center rounded-[50%] mx-auto mb-4">
-                    <img src="./img/icon-2.png" alt="tick">
+                <div class="grid gap-2 pt-[50px] mt-[-60px] rounded-[12px] bg-[#D40000] w-full pb-5 h-[180px]">
+                    <p class="font-semibold text-[22px] text-white">Dr. Sumit Kumar Pramanick</p>
+                    <p class="text-white font-semibold text-[14px]">Assistant Professor</p>
+                    <p class="text-white text-[14px]">Department of Electrical Engineering,</p>
+                    <p class="text-white text-[12px]">Indian Institute of Technology Delhi</p>
                 </div>
-                Work Flipped & Peer Learning
             </div>
-            <div class="text-center font-bold ">
-                <div
-                    class=" bg-[#D40000] h-[100px] w-[100px] flex items-center justify-center rounded-[50%] mx-auto mb-4">
-                    <img src="./img/icon-3.png" alt="tick">
+
+            <div class="flex flex-col justify-center items-center gap-5">
+                <div class="relative z-1">
+                    <img src="./img/akhil.jpg" alt="faculty"
+                        class="border-[#DC2626] border-2 rounded-full w-[120px] h-[120px] object-cover">
                 </div>
-                Hands-on Exercises and Assessments
-            </div>
-            <div class="text-center  font-bold">
-                <div
-                    class=" bg-[#D40000] h-[100px] w-[100px] flex items-center justify-center rounded-[50%] mx-auto mb-4">
-                    <img src="./img/icon-4.png" alt="tick">
+                <div class="grid gap-2 pt-[50px] mt-[-60px] rounded-[12px] bg-[#D40000] w-full pb-5 h-[180px]">
+                    <p class="font-semibold text-[22px] text-white">Dr. Akhil Garg</p>
+                    <p class="text-white font-semibold text-[14px]">Associate Professor</p>
+                    <p class="text-white text-[14px]">School of Mechanical Science and Engineering,</p>
+                    <p class="text-white text-[12px]">Huazhong University of Science and Technology (HUST), China</p>
                 </div>
-                Continuous Evaluation
             </div>
+
+            <div class="flex flex-col justify-center items-center gap-5">
+                <div class="relative z-1">
+                    <img src="./img/praveen.jpeg" alt="faculty"
+                        class="border-[#DC2626] border-2 rounded-full w-[120px] h-[120px] object-cover">
+                </div>
+                <div class="grid gap-2 pt-[50px] mt-[-60px] rounded-[12px] bg-[#D40000] w-full pb-5 h-[180px]">
+                    <p class="font-semibold text-[22px] text-white">Dr. Praveen Kumar</p>
+                    <p class="text-white font-semibold text-[14px]">Professor</p>
+                    <p class="text-white text-[14px]">Department of Electronics and Electrical Engineering, IIT Guwahati
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="bg-[#F3F4F6]">
+        <div class="max-w-[1280px] m-auto w-[80%] text-center py-10 max-lg:w-[90%] max-sm:py-5">
+            <div class="mb-10">
+                <h2 class="text-[30px] Roboto font-medium max-lg:text-[25px]">Hear from Our Alumni
+                </h2>
+                <div class="inline-block w-[80px] bg-[#DC2626] h-1"></div>
+            </div>
+
+            <div>
+                <div
+                    class="relative inline-block py-5 px-5 rounded-[8px] max-w-[800px] w-full Roboto shadow-sm bg-[#7F7F7F]">
+                    <div class="px-12 py-2 flex items-center Roboto gap-5 p-bodytext">
+                        <div><img src="./img/subramaniam.jpg" alt=""
+                                class="h-[80px] w-[80px] object-cover rounded-full"></div>
+                        <div class="text-left">
+                            <p class="text-white font-semibold">Mr. Subramaniam</p>
+                            <p class="text-white text-[#4B5563] text-[13px]">Assistant General Manager,</p>
+                            <p class="text-white text-[#4B5563] font-semibold text-[14px]">Stellantis</p>
+                        </div>
+                    </div>
+                    <div class="px-12 py-2 max-sm:pr-1 p-main">
+                        <p class="italic text-white text-[14px] text-justify">"My motivation to join the Advanced
+                            Programme in Electric Vehicle (EV) Technology at IIT Delhi was to enhance my practical
+                            experience with solid academic insights from a premier institute. The faculty was highly
+                            engaging, and the well-organised Campus immersion made for an excellent experience. This
+                            programme helped me build a strong foundation in EV technology, which proved invaluable in
+                            real-time production and procurement discussions. It also positioned me as a subject matter
+                            expert in my organisation, supporting my career growth. I highly recommend this programme to
+                            beginners and mid-level professionals aiming to excel in the EV field."</p>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <section class="bg-gray-100 py-10">
+        <div class="max-w-6xl mx-auto w-4/5 text-center">
+            <h2 class="text-3xl font-medium mb-4">FAQs</h2>
+            <div class="w-20 h-1 bg-red-600 mx-auto mb-10"></div>
+
+            <div class="space-y-4 max-w-4xl mx-auto">
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center mb-2 px-5 py-4 text-left font-semibold text-gray-900 faq-toggle ">
+                        Q1. Who is the Advanced Programme in Electric Vehicle (EV) Technology – CEP, IIT Delhi, ideal
+                        for?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            This programme is designed for engineers, working professionals, and technical graduates
+                            interested in EV systems, battery technology, power electronics, and the rapidly growing
+                            e-mobility domain.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q2. What is the duration of the EV programme from CEP, IIT Delhi?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            The Advanced Programme in Electric Vehicle (EV) Technology – IIT Delhi runs for 6 months,
+                            delivered through live online sessions.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q3. What are the eligibility criteria for the EV IITD programme?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            Applicants should have a background in engineering or related technical fields.
+                            Professionals working in automotive, electrical, electronics, or energy sectors are
+                            preferred.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between  mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q4. Is the EV programme from IIT Delhi completely online?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            Yes. The EV IITD programme is conducted 100% online through interactive live faculty
+                            sessions..
+                        </p>
+                    </div>
+                </div>
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q5. Will I receive a certificate from IIT Delhi after completing the EV programme?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            Yes. Upon completion, participants receive a Certificate from IIT Delhi (Continuing
+                            Education Programme – CEP).
+                        </p>
+                    </div>
+                </div>
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q6. What skills will I gain through the Advanced Programme in Electric Vehicle (EV) Technology –
+                        IIT Delhi?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            You will gain hands-on understanding of EV architecture, batteries and energy storage,
+                            drivetrains, power electronics, charging systems, and EV system integration.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q7. Does the EV IITD programme include exams or assessments?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            Yes. The programme includes periodic assessments, assignments, and final evaluations as per
+                            CEP guidelines.
+                    </div>
+                </div>
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q8. What is the class schedule for the EV IITD programme?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            Live sessions are typically scheduled on weekends or evenings to support working
+                            professionals.
+                    </div>
+                </div>
+
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q9.Will I get access to study materials and recorded sessions?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            Yes. Enrolled participants receive learning materials, reference content, and session
+                            recordings for convenient revision.
+                    </div>
+                </div>
+                <div class="border-b-2 border-gray-200  overflow-hidden">
+                    <button
+                        class="w-full flex justify-between mb-2 items-center px-5 py-4 text-left font-semibold text-gray-900 faq-toggle">
+                        Q10.Is there a capstone project in the Advanced Programme in Electric Vehicle (EV) Technology –
+                        IIT Delhi?
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-[max-height] duration-300 faq-content">
+                        <p class="px-5 py-4 text-gray-700 text-left">
+                            Yes. The programme features an industry-oriented capstone project focused on EV design,
+                            system modelling, or integration.
+                    </div>
+                </div>
 
 
 
 
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-[#0A0A0A] to-[#4B5563] pt-10 pb-1 max-sm:py-3">
+        <div class="max-w-[1280px] w-[90%] m-auto">
+            <div class="text-center m-auto pt-10 max-w-[950px] max-sm:py-1">
+                <div class="grid grid-cols-[auto_400px] gap-14 text-white max-lg:grid-cols-1">
+
+                    <div>
+                        <h2 class="font-medium text-left max-sm:text-center max-sm:w-[300px] max-sm:m-auto Roboto mb-4">
+                            <span class="text-[33px] max-sm:text-[25px]">Why Choose IIT Delhi</span>
+                        </h2>
+                        <p class="text-justify font-normal text-white text-[17px] Roboto mb-5">
+                            The Indian Institute of Technology Delhi (IIT Delhi), one of India’s first five IITs, has
+                            been a national leader in science, engineering, and technology education since 1961.
+                            Recognised as an Institution of National Importance, IIT Delhi holds the authority to design
+                            its own academic programmes, conduct examinations, and award degrees.
+                        </p>
+
+                        <h3
+                            class="font-medium text-left max-sm:text-center max-sm:w-[300px] max-sm:m-auto Roboto text-[20px] mb-2">
+                            About CEP:
+                        </h3>
+
+                        <p class="text-justify font-normal text-white text-[15px] Roboto mb-5">
+                            Through its Continuing Education Programme (CEP) and the eVIDYA@IITD initiative, IIT Delhi
+                            offers high-quality online certificate programmes to learners across India and abroad. These
+                            industry-aligned programmes are designed to upskill professionals and students in
+                            cutting-edge domains, supporting their career growth through flexible, interactive, and
+                            globally relevant learning.
+                        </p>
+
+
+
+                    </div>
+
+
+                    <div class="flex justify-center items-center">
+                        <img src="./img/GettyImages-2165746031 1.png" alt="IIT Delhi"
+                            class="w-full max-w-[400px] object-cover">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="max-w-[950px] w-[90%] m-auto bg-white h-1 my-10"></div>
+
+
+            <div class="mb-5">
+                <a href="#" target="_blank"
+                    class="bg-white py-2 px-20 text-black rounded-[50px] Roboto font-medium block mx-auto w-max">
+                    Enroll Now!
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="max-w-[1280px] m-auto w-[80%] text-center  py-5 max-lg:w-[90%] max-sm:py-5">
+        <div>
+            <h2 class="font-medium max-sm:text-[13px]">India’s Most Trusted Online Higher Education & Upskilling Company
+            </h2>
+
+        </div>
+        <div class="inline-flex justify-center mt-4 items-center gap-3">
+            <span class="text-[22px]  max-sm:text-[18px]"> Services Provider </span>
+            <span class="bg-black h-7 w-[1px] inline-block"></span>
+            <span><img src="./img/jaro-blue-logo.png" alt="logo" class="w-[180px] h-auto max-sm:w-[160px]"></span>
         </div>
 
 
-
-    </section>
-
-
-    <section>
-
-    </section>
-
+    </footer>
 
 
 
@@ -619,3 +1146,7 @@
 </body>
 
 </html>
+
+<script>
+
+</script>
